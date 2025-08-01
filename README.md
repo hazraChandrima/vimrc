@@ -1,8 +1,13 @@
-# My stupid Vim Configuration
+# My useless Vim Configuration
 
-This repository contains my personal Vim configuration with plugins and custom mappings to enhance productivity. It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
+I don't know why the f\*ck did I make this, no ones gonna read this... just like my DMs
 
-## some ass Features
+Anyways, I'll be switching to NeoVim very soon, just wanted to start with Vim
+
+I make a repo for every shit that I do...like people post every shit of theirs on LinkedIn
+
+
+## Some stupid ass features
 - Gruvbox colorscheme with a dark background
 - ALE for asynchronous linting
 - NERDTree for file navigation
@@ -12,6 +17,8 @@ This repository contains my personal Vim configuration with plugins and custom m
 - Optimized settings for better editing experience
 
 ## Installation
+
+It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 
 ### 1. Install vim-plug
 Run the following command to install vim-plug:
