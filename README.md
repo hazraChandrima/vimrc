@@ -23,7 +23,7 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ### 2. Clone this repository
 
 ```bash
-git clone https://github.com/<your-username>/vimrc.git ~/.vimrc_repo
+git clone https://github.com/hazraChandrima/vimmy.git
 ```
 
 ### 3. Backup your old `.vimrc` (optional)
@@ -35,7 +35,7 @@ mv ~/.vimrc ~/.vimrc.backup
 ### 4. Symlink the provided vimrc
 
 ```bash
-ln -s ~/.vimrc_repo/vimrc ~/.vimrc
+ln -s ~/vimmy/.vimrc ~/.vimrc
 ```
 
 ### 5. Install plugins
