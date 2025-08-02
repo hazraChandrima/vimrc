@@ -75,7 +75,7 @@ Open Vim and run:
 
 That's all it takes...
 
-You can add more color schemes by placing them in .vim/colors/.
+You can add more color schemes by placing them in .vim/colors/
 
 ## Key Mappings (you may change 'em if you want)
 
