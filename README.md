@@ -1,7 +1,7 @@
 # My minimal vimrc
 
 This is a simple and minimial vim configuration that I use often.
-Honestly, I don't know why did I make this. No ones gonna read this... just like my DMs.
+Honestly, I don't know why I made this. No ones gonna read this... just like my DMs.
 
 Anyways, I'll be switching to NeoVim very soon, so just wanted to start with Vim.
 
