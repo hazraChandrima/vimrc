@@ -21,6 +21,13 @@ And most importantly, this is for Linux users, cuz anyone using Windows must be 
 
 ## If you consider trying it out
 
+### Just make sure you have these
+
+* Git (for plugin installation and Git branch detection in the status line)
+* Python3 (for running scripts with F5)
+* curl (for downloading vim-plug)
+* Gruvbox theme (installed automatically by vim-plug)
+
 ### 1. Install vim-plug
 
 It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
@@ -56,12 +63,7 @@ Open Vim and run:
 :PlugInstall
 ```
 
-## Just make sure you have these
-
-* Git (for plugin installation and Git branch detection in the status line)
-* Python3 (for running scripts with F5)
-* curl (for downloading vim-plug)
-* Gruvbox theme (installed automatically by vim-plug)
+That's all it takes...
 
 ## Key Mappings (you may change if you want)
 
