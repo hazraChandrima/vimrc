@@ -1,11 +1,11 @@
 # My minimal vimrc
 
-This is a simple and minimial vim configuration that I use often.
-Honestly, I don't know why I made this. No ones gonna read this... just like my DMs.
+This is a simple and minimal vim configuration that I use often.
+Honestly, I don't know why I made this. No one's gonna read this... just like my DMs.
 
-Anyways, I'll be switching to NeoVim very soon, so just wanted to start with Vim.
+Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with Vim first.
 
-And most importantly, this is for Linux users, cuz anyone using Windows must be happy with their VSCode
+And most importantly, this is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode
 
 ## What does it look like??
 
@@ -16,17 +16,17 @@ And most importantly, this is for Linux users, cuz anyone using Windows must be 
 - ALE for asynchronous linting
 - NERDTree for file navigation
 - Custom status line with Git branch display
-- Useful key mappings for faster editing
+- Convenient key mappings for faster editing
 - Python script execution with the F5 key
 
 ## If you consider trying it out
 
-### Just make sure you have these
+### Just make sure you have
 
 * Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
 * curl (for downloading vim-plug)
-* Gruvbox theme (installed automatically by vim-plug)
+* Gruvbox theme (included in this repo, no need to run around here and there unless you want a different theme)
 
 ### 1. Install vim-plug
 
@@ -35,12 +35,13 @@ It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-````
+```
 
 ### 2. Clone this repo
 
 ```bash
 git clone --depth=1  https://github.com/hazraChandrima/vimmy.git
+cd vimmy/
 ```
 
 ### 3. Backup your old `.vimrc` (if you have a superior vimrc)
@@ -49,10 +50,19 @@ git clone --depth=1  https://github.com/hazraChandrima/vimmy.git
 mv ~/.vimrc ~/.vimrc.backup
 ```
 
-### 4. Symlink this vimrc
+### 4. Copy the files to your home directory
 
 ```bash
-ln -s ~/vimmy/.vimrc ~/.vimrc
+cp .vimrc ~/
+mkdir -p ~/.vim/colors
+cp .vim/colors/gruvbox.vim ~/.vim/colors/
+```
+
+Or you can just symlink them:
+
+```bash
+ln -s $(pwd)/.vimrc ~/.vimrc
+ln -s $(pwd)/.vim/colors ~/.vim/colors
 ```
 
 ### 5. Install plugins
@@ -65,7 +75,9 @@ Open Vim and run:
 
 That's all it takes...
 
-## Key Mappings (you may change if you want)
+You can add more color schemes by placing them in .vim/colors/.
+
+## Key Mappings (you may change 'em if you want)
 
 | Mapping           | Action                                                    |
 | ----------------- | --------------------------------------------------------- |

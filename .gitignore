@@ -1,2 +1,5 @@
-# may put somethin here later
+# if you're badly ignored by your crush, put 'em in gitignore
 *.swp
+*.swo
+*.tmp
+*.un~
