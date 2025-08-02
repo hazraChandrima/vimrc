@@ -5,7 +5,7 @@ Honestly, I don't know why I made this. No one's gonna read this... just like my
 
 Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with Vim first.
 
-And most importantly, this is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode
+And most importantly, this is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
 
 ## What does it look like??
 
