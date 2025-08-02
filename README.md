@@ -1,27 +1,26 @@
-# My useless Vim Configuration
+# My minimal vimrc
 
-I don't know why the f\*ck did I make this, no ones gonna read this... just like my DMs
+This is a simple and minimial vim configuration that I use often.
+To be honest, I don't know why the f\*ck did I make this. No ones gonna read this... just like my DMs.
 
-Anyways, I'll be switching to NeoVim very soon, just wanted to start with Vim
+Anyways, I'll be switching to NeoVim very soon, so just wanted to start with Vim.
 
-I make a repo for every shit that I do...like people post every shit of theirs on LinkedIn
+And most importantly, this is for Linux users, cuz anyone using Windows must be happy with their VSCode
 
-
-## Some stupid ass features
+## Some stupid features this vimrc offers
 - Gruvbox colorscheme with a dark background
 - ALE for asynchronous linting
 - NERDTree for file navigation
 - Custom status line with Git branch display
 - Useful key mappings for faster editing
 - Python script execution with the F5 key
-- Optimized settings for better editing experience
 
 ## Installation
 
 It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 
 ### 1. Install vim-plug
-Run the following command to install vim-plug:
+
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -33,13 +32,13 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 git clone https://github.com/hazraChandrima/vimmy.git
 ```
 
-### 3. Backup your old `.vimrc` (optional)
+### 3. Backup your old `.vimrc` (if you have a superior vimrc)
 
 ```bash
 mv ~/.vimrc ~/.vimrc.backup
 ```
 
-### 4. Symlink the provided vimrc
+### 4. Symlink this vimrc
 
 ```bash
 ln -s ~/vimmy/.vimrc ~/.vimrc
@@ -53,14 +52,14 @@ Open Vim and run:
 :PlugInstall
 ```
 
-## Dependencies
+## Just make sure you have these
 
 * Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
 * curl (for downloading vim-plug)
 * Gruvbox and Molokai themes (installed automatically by vim-plug)
 
-## Key Mappings
+## Key Mappings (you may change if you want)
 
 | Mapping           | Action                                                    |
 | ----------------- | --------------------------------------------------------- |
@@ -77,8 +76,6 @@ Open Vim and run:
 | `Ctrl+Arrow Keys` | Resize split windows                                      |
 
 
-## How It Works
+## If something goes wrong
 
-* Plugins are managed via vim-plug and installed into `~/.vim/plugged`.
-* Colorscheme is set to Gruvbox (dark mode) by default.
-* The configuration supports GUI Vim (GVim) with custom settings.
+It would be a shame. But the good news is, you're smart enough to fix it.
