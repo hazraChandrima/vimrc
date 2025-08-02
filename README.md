@@ -7,7 +7,11 @@ Anyways, I'll be switching to NeoVim very soon, so just wanted to start with Vim
 
 And most importantly, this is for Linux users, cuz anyone using Windows must be happy with their VSCode
 
-## Some stupid features this vimrc offers
+## What does it look like??
+
+![oopsie! it broke :\\](what-it-looks-like.png)
+
+## Low-key features this vimrc offers
 - Gruvbox colorscheme with a dark background
 - ALE for asynchronous linting
 - NERDTree for file navigation
@@ -15,7 +19,7 @@ And most importantly, this is for Linux users, cuz anyone using Windows must be 
 - Useful key mappings for faster editing
 - Python script execution with the F5 key
 
-## I would be highly honoured if you consider trying it out
+## If you consider trying it out
 
 ### 1. Install vim-plug
 
@@ -57,7 +61,7 @@ Open Vim and run:
 * Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
 * curl (for downloading vim-plug)
-* Gruvbox and Molokai themes (installed automatically by vim-plug)
+* Gruvbox theme (installed automatically by vim-plug)
 
 ## Key Mappings (you may change if you want)
 
