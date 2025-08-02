@@ -33,7 +33,7 @@ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ### 2. Clone this repo
 
 ```bash
-git clone https://github.com/hazraChandrima/vimmy.git
+git clone --depth=1  https://github.com/hazraChandrima/vimmy.git
 ```
 
 ### 3. Backup your old `.vimrc` (if you have a superior vimrc)
