@@ -1,35 +1,35 @@
-set nocompatible
-filetype on
-filetype plugin on
-filetype indent on
-syntax on
-set number
-set cursorline
-set nowrap
+set nocompatible          " Disable Vi compatibility
+filetype on               " Enable filetype detection
+filetype plugin on        " Enable loading filetype plugins
+filetype indent on        " Enable filetype-specific indentation
+syntax on                 " Enable syntax highlighting
+set number                " Show line numbers
+set cursorline            " Highlight the current line
+set nowrap                " Do not wrap long lines
 
-set shiftwidth=4
-set tabstop=4
-set expandtab
-set nobackup
-set scrolloff=10
+set shiftwidth=4          " 4 spaces indentation
+set tabstop=4             " A tab counts as 4 spaces
+set expandtab             " Convert tabs to spaces
+set nobackup              " Do not create backup files
+set scrolloff=10          " Keep 10 lines visible when scrolling
 
-set incsearch
-set ignorecase
+set incsearch             " Incremental search (highlight as you type)
+set ignorecase            " Case-insensitive search by default
+set hlsearch              " Highlight all search matches
 
-set showcmd
-set showmode
-set showmatch
+set showcmd               " Show incomplete commands in the bottom bar
+set showmode              " Display the current mode
+set showmatch             " Highlight matching parentheses/brackets
 
-set hlsearch
+set history=1000          " history is important 
+set wildmenu              " Enhanced command-line completion
+set wildmode=list:longest " Auto-complete with longest match first
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx " Ignore unnecessary files in completion
 
-set history=1000
-set wildmenu
-set wildmode=list:longest
-set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
-
-colorscheme gruvbox
-set bg=dark
-hi Normal guibg=NONE ctermbg=NONE
+" --- Color Scheme ---
+colorscheme gruvbox       " Load Gruvbox theme
+set bg=dark               " Set background to dark
+hi Normal guibg=NONE ctermbg=NONE " Transparent background for terminal users
 
 
 " PLUGINS ---------------------------------------------------------------- {{{

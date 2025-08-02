@@ -9,7 +9,7 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 
 ## What does it look like??
 
-![oopsie! it broke :\\](what-it-looks-like.png)
+![oopsie! it broke :\\](preview.png)
 
 ## Low-key features this vimrc offers
 - Gruvbox colorscheme with a dark background
