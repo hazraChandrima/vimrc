@@ -81,9 +81,12 @@ nnoremap Y y$
 " I map F5 to a chain of commands here.
 " :w saves the file.
 " <CR> (carriage return) is like pressing the enter key.
-" !clear runs the external clear screen command.
+" :terminal opens a terminal buffer in a split window
 " !python3 % executes the current file with Python.
-nnoremap <f5> :w <CR>:!clear <CR>:!python3 % <CR>
+
+" nnoremap <f5> :w <CR>:!clear <CR>:!python3 % <CR>
+nnoremap <F5> :w<CR>:terminal python3 %<CR>
+
 
 " You can split the window in Vim by typing :split or :vsplit.
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
