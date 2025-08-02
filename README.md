@@ -15,18 +15,18 @@ And most importantly, this is for Linux users, cuz anyone using Windows must be 
 - Useful key mappings for faster editing
 - Python script execution with the F5 key
 
-## Installation
-
-It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
+## I would be highly honoured if you consider trying it out
 
 ### 1. Install vim-plug
+
+It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 
 ```bash
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ````
 
-### 2. Clone this repository
+### 2. Clone this repo
 
 ```bash
 git clone https://github.com/hazraChandrima/vimmy.git
