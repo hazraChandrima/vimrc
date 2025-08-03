@@ -89,11 +89,6 @@ nnoremap N Nzz
 " Yank from cursor to the end of line.
 nnoremap Y y$
 
-" Pressing the letter o will open a new line below the current one.
-" Exit insert mode after creating a new line above or below the current line.
-nnoremap o o<esc>
-nnoremap O O<esc>
-
 " Map the F5 key to run a Python script inside Vim.
 " I map F5 to a chain of commands here.
 " :w saves the file.
