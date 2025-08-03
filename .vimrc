@@ -4,6 +4,7 @@ filetype plugin on        " Enable loading filetype plugins
 filetype indent on        " Enable filetype-specific indentation
 syntax on                 " Enable syntax highlighting
 set number                " Show line numbers
+set relativenumber        " 'tis really helpful
 set cursorline            " Highlight the current line
 set nowrap                " Do not wrap long lines
 
