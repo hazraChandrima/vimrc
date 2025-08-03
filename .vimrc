@@ -103,6 +103,11 @@ nnoremap Y y$
 nnoremap <F5> :w<CR>:terminal python3 %<CR>
 
 
+" Pressing the letter o will open a new line below the current one.
+" Exit insert mode after creating a new line above or below the current line.
+nnoremap o o<esc>
+nnoremap O O<esc>
+
 " You can split the window in Vim by typing :split or :vsplit.
 " Navigate the split view easier by pressing CTRL+j, CTRL+k, CTRL+h, or CTRL+l.
 nnoremap <c-j> <c-w>j
