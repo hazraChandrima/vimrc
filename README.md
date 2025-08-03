@@ -10,6 +10,14 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 ## What does it look like??
 
 ![oopsie! it broke :\\](preview.png)
+<p align='center'><i>with NERDTree</i></p>
+
+---
+
+![what a shame, sorry :\\](preview-fzf.png)
+<p align='center'><i>with fzf</i></p>
+
+---
 
 ## Low-key features this vimrc offers
 - Gruvbox colorscheme with a dark background
