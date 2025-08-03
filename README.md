@@ -17,6 +17,7 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 - NERDTree for file navigation
 - Custom status line with Git branch display
 - Convenient key mappings for faster editing
+- fzf for fuzzy file and text search
 - Python script execution with the F5 key
 
 ## If you consider trying it out
@@ -26,7 +27,7 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 * Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
 * curl (for downloading vim-plug)
-* Gruvbox theme (included in this repo, no need to run around here and there unless you want a different theme)
+* fzf (for fuzzy finding)
 
 ### 1. Install vim-plug
 
@@ -92,6 +93,7 @@ You can add more color schemes by placing them in .vim/colors/
 | `<F3>`            | Toggle NERDTree                                           |
 | `Ctrl+j/k/h/l`    | Navigate between split windows                            |
 | `Ctrl+Arrow Keys` | Resize split windows                                      |
+| `Ctrl+p`          | Open fzf and fuzzy search files in the current directory  |
 
 
 ## If something goes wrong

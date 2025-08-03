@@ -43,8 +43,20 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'preservim/nerdtree'
 
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+  Plug 'junegunn/fzf.vim'
+
 
 call plug#end()
+
+" }}}
+
+
+" PLUGIN CONFIGURATIONS  ------------------------------------------------- {{{
+
+" fzf configuration
+let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8, 'yoffset': 0.5, 'xoffset': 0.5, 'border': 'sharp' } }
 
 " }}}
 
@@ -110,6 +122,11 @@ nnoremap <F3> :NERDTreeToggle<cr>
 " Have nerdtree ignore certain files and directories.
 let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', '\.pyc$', '\.odt$', '\.png$', '\.gif$', '\.db$', '\.swp$']
 
+
+" --- FZF Key Mappings ---
+
+" Ctrl + p →  Search and open files in the current working directory
+nnoremap <C-p> :Files<CR>
 
 " }}}
 
