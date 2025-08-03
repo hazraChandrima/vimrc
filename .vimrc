@@ -56,7 +56,10 @@ call plug#end()
 " PLUGIN CONFIGURATIONS  ------------------------------------------------- {{{
 
 " fzf configuration
-let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8, 'yoffset': 0.5, 'xoffset': 0.5, 'border': 'sharp' } }
+
+let g:fzf_layout = { 'window': { 'width': 0.75, 'height': 0.7, 'yoffset': 0.5, 'xoffset': 0.5, 'border': 'sharp' } }
+
+let g:fzf_preview_window = ['right:60%', 'ctrl-/']
 
 " }}}
 
