@@ -20,7 +20,7 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 ---
 
 ## Low-key features this vimrc offers
-- Gruvbox colorscheme with a dark background
+- Gruvbox/Archery colorscheme with a dark background
 - ALE for asynchronous linting
 - NERDTree for file navigation
 - Custom status line with Git branch display
