@@ -28,9 +28,8 @@ set wildmode=list:longest " Auto-complete with longest match first
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx " Ignore unnecessary files in completion
 
 " --- Color Scheme ---
-colorscheme gruvbox       " Load Gruvbox theme
+colorscheme mountaineer_grey       " Load Gruvbox theme
 set bg=dark               " Set background to dark
-hi Normal guibg=NONE ctermbg=NONE " Transparent background for terminal users
 
 
 " PLUGINS ---------------------------------------------------------------- {{{
