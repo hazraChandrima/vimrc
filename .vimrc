@@ -27,8 +27,13 @@ set wildmenu              " Enhanced command-line completion
 set wildmode=list:longest " Auto-complete with longest match first
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx " Ignore unnecessary files in completion
 
+
+if has("termguicolors")
+    set termguicolors
+endif
+
 " --- Color Scheme ---
-colorscheme mountaineer_grey       " Load Gruvbox theme
+colorscheme archery       " I use Arch btw
 set bg=dark               " Set background to dark
 
 
@@ -171,7 +176,7 @@ if has('gui_running')
     set background=dark
 
     " Set the color scheme.
-    colorscheme molokai
+    colorscheme archery
 
     " Set a custom font you have installed on your computer.
     " Syntax: set guifont=<font_name>\ <font_weight>\ <size>
