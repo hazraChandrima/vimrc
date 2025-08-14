@@ -37,44 +37,29 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 * curl (for downloading vim-plug)
 * fzf (for fuzzy finding)
 
-### 1. Install vim-plug
-
 It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 
-```bash
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-### 2. Clone this repo
+### 1. Clone this repo
 
 ```bash
 git clone --depth=1  https://github.com/hazraChandrima/vimmy.git
 cd vimmy/
 ```
 
-### 3. Backup your old `.vimrc` (if you have a superior vimrc)
+### 2. Backup your old `.vimrc` (if you have a pre-existing superior vimrc)
 
 ```bash
 mv ~/.vimrc ~/.vimrc.backup
 ```
 
-### 4. Copy the files to your home directory
+### 3. Copy the files to your home directory
 
 ```bash
 cp .vimrc ~/
-mkdir -p ~/.vim/colors
-cp .vim/colors/gruvbox.vim ~/.vim/colors/
+cp -r .vim/ ~/
 ```
 
-Or you can just symlink them:
-
-```bash
-ln -s $(pwd)/.vimrc ~/.vimrc
-ln -s $(pwd)/.vim/colors ~/.vim/colors
-```
-
-### 5. Install plugins
+### 4. Install plugins
 
 Open Vim and run:
 
@@ -83,8 +68,6 @@ Open Vim and run:
 ```
 
 That's all it takes...
-
-You can add more color schemes by placing them in .vim/colors/
 
 ## Key Mappings (you may change 'em if you want)
 
