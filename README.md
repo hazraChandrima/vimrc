@@ -7,7 +7,18 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 
 And most importantly, this is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
 
-## What does it look like with different colorschemes??
+
+## Low-key features this vimrc offers
+- Gruvbox/Archery/Mountaineer colorscheme with a dark background
+- ALE for asynchronous linting
+- NERDTree for file navigation
+- Custom status line with Git branch display
+- Convenient key mappings for faster editing
+- fzf for fuzzy file and text search
+- Python script execution with the F5 key
+
+
+## What does it look like with these colorschemes??
 
 You can use a different color theme from here : [list of vim colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
 
@@ -19,14 +30,6 @@ You can use a different color theme from here : [list of vim colorschemes](https
 
 ---
 
-### 2. archery 
-
-![oopsie! it broke :\\](screenshots/archery/nerdtree.png)
-
-![what a shame, sorry :\\](screenshots/archery/fzf.png)
-
----
-
 ### 3. mountaineer\_grey 
 
 ![oopsie! it broke :\\](screenshots/mountaineer/nerdtree.png)
@@ -35,16 +38,15 @@ You can use a different color theme from here : [list of vim colorschemes](https
 
 ---
 
-## Low-key features this vimrc offers
-- Gruvbox/Archery/Mountaineer colorscheme with a dark background
-- ALE for asynchronous linting
-- NERDTree for file navigation
-- Custom status line with Git branch display
-- Convenient key mappings for faster editing
-- fzf for fuzzy file and text search
-- Python script execution with the F5 key
+### 2. archery 
 
-## If you consider trying it out
+![oopsie! it broke :\\](screenshots/archery/nerdtree.png)
+
+![what a shame, sorry :\\](screenshots/archery/fzf.png)
+
+---
+
+## If you ever consider trying it out
 
 ### Just make sure you have
 
@@ -106,4 +108,5 @@ That's all it takes...
 ## If something goes wrong
 
 It would be a shame. But the good news is, you're smart enough to fix it.
+
 Jokes aside, you may reach out to me via hazrachandrima6@gmail.com
