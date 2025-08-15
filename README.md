@@ -9,7 +9,7 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 
 ## What does it look like with different colorschemes??
 
-You can use a different color theme from here : ![list of vim colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
+You can use a different color theme from here : [list of vim colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
 
 ### 1. gruvbox
 
