@@ -19,7 +19,7 @@ set ignorecase            " Case-insensitive search by default
 set hlsearch              " Highlight all search matches
 
 set showcmd               " Show incomplete commands in the bottom bar
-set showmode              " Display the current mode
+set noshowmode              " Display the current mode
 set showmatch             " Highlight matching parentheses/brackets
 
 set history=1000          " history is important 
