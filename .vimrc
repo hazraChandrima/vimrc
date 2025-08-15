@@ -214,43 +214,74 @@ endif
 
 " STATUS LINE ------------------------------------------------------------ {{{
 
-" Status bar code goes here.
+" I have provided personalized statusline as well as the lightline version.
+" You can use either of them by commenting out the other one.
+" I personally use the lightline one for arch color theme...
 
-function! GitBranch()
-    if !isdirectory(".git") && system('git rev-parse --is-inside-work-tree 2>/dev/null') !~# 'true'
-        return ''
-    endif
-    return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
-endfunction
 
-function! StatuslineGit()
-    let l:branchname = GitBranch()
-    return strlen(l:branchname) > 0 ? ' '.l:branchname : ''
-endfunction
+" ---------------- PERSONALIZED STATUS LINE ----------------------
 
-augroup NerdTreeStatusline
-    autocmd!
-    autocmd FileType nerdtree setlocal statusline=0
-augroup END
+""  If you're using this, comment out the lightline configuration and the lighline plugin in the plugin section.
+"
+"function! GitBranch()
+"    if !isdirectory(".git") && system('git rev-parse --is-inside-work-tree 2>/dev/null') !~# 'true'
+"        return ''
+"    endif
+"    return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+"endfunction
+"
+"function! StatuslineGit()
+"    let l:branchname = GitBranch()
+"    return strlen(l:branchname) > 0 ? ' '.l:branchname : ''
+"endfunction
+"
+"augroup NerdTreeStatusline
+"    autocmd!
+"    autocmd FileType nerdtree setlocal statusline=0
+"augroup END
+"
+"" Clear status line when vimrc is reloaded.
+"set statusline=
+"
+"set statusline+=%#PmenuSel#
+"set statusline+=\%{StatuslineGit()}
+"set statusline+=%*
+"
+"" Status line left side.
+"set statusline+=\ %F\ %M\ %Y\ %R
+"
+"" Use a divider to separate the left side from the right side.
+"set statusline+=%=
+"
+"" Status line right side.
+"set statusline+=\ ascii:\ %b\ row:\ %l\ col:\ %c\ percent:\ %p%%
+"set statusline+=\[%{&fileformat}\]
+"
+"" Show the status on the second to last line.
+"set laststatus=2
 
-" Clear status line when vimrc is reloaded.
-set statusline=
+" ----------------- END OF PERSONALIZED STATUS LINE ------------------------
 
-set statusline+=%#PmenuSel#
-set statusline+=\%{StatuslineGit()}
-set statusline+=%*
 
-" Status line left side.
-set statusline+=\ %F\ %M\ %Y\ %R
+" ----------------------- LIGHTLINE STATUS LINE ----------------------------
 
-" Use a divider to separate the left side from the right side.
-set statusline+=%=
-
-" Status line right side.
-set statusline+=\ ascii:\ %b\ row:\ %l\ col:\ %c\ percent:\ %p%%
-set statusline+=\[%{&fileformat}\]
+" if you're using this, comment out the personalized statusline configuration.
 
 " Show the status on the second to last line.
 set laststatus=2
+
+let g:lightline = {
+      \ 'colorscheme': 'archery',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'FugitiveHead'
+      \ },
+      \ }
+
+" ----------------- END OF LIGHTLINE CONFIGURATION  ------------------------
+
 
 " }}}
