@@ -7,20 +7,36 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 
 And most importantly, this is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
 
-## What does it look like??
+## What does it look like with different colorschemes??
 
-![oopsie! it broke :\\](preview.png)
-<p align='center'><i>with NERDTree</i></p>
+You can use a different color theme from here : ![list of vim colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
+
+### 1. gruvbox
+
+![oopsie! it broke :\\](screenshots/gruvbox/nerdtree.png)
+
+![what a shame, sorry :\\](screenshots/gruvbox/fzf.png)
 
 ---
 
-![what a shame, sorry :\\](preview-fzf.png)
-<p align='center'><i>with fzf</i></p>
+### 2. archery 
+
+![oopsie! it broke :\\](screenshots/archery/nerdtree.png)
+
+![what a shame, sorry :\\](screenshots/archery/fzf.png)
+
+---
+
+### 3. mountaineer\_grey 
+
+![oopsie! it broke :\\](screenshots/mountaineer/nerdtree.png)
+
+![what a shame, sorry :\\](screenshots/mountaineer/fzf.png)
 
 ---
 
 ## Low-key features this vimrc offers
-- Gruvbox/Archery colorscheme with a dark background
+- Gruvbox/Archery/Mountaineer colorscheme with a dark background
 - ALE for asynchronous linting
 - NERDTree for file navigation
 - Custom status line with Git branch display

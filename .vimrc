@@ -37,6 +37,28 @@ colorscheme archery       " I use Arch btw
 set bg=dark               " Set background to dark
 
 
+" TRANSPARENCY --------------------------------------------------- {{{
+
+function! TransparentBackground()
+    hi Normal        ctermbg=NONE guibg=NONE
+    hi NonText       ctermbg=NONE guibg=NONE
+    hi LineNr        ctermbg=NONE guibg=NONE
+    hi EndOfBuffer   ctermbg=NONE guibg=NONE
+    hi StatusLine    ctermbg=NONE guibg=NONE
+    hi StatusLineNC  ctermbg=NONE guibg=NONE
+    hi SignColumn    ctermbg=NONE guibg=NONE
+    hi VertSplit     ctermbg=NONE guibg=NONE
+    hi Pmenu         ctermbg=NONE guibg=NONE
+    hi TabLine       ctermbg=NONE guibg=NONE
+    hi TabLineFill   ctermbg=NONE guibg=NONE
+endfunction
+
+autocmd ColorScheme * call TransparentBackground()
+call TransparentBackground()
+
+" }}}
+
+
 " PLUGINS ---------------------------------------------------------------- {{{
 
 " Plugin code goes here.
@@ -51,6 +73,8 @@ call plug#begin('~/.vim/plugged')
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
   Plug 'junegunn/fzf.vim'
+
+  Plug 'itchyny/lightline.vim'
 
 
 call plug#end()
