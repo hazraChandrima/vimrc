@@ -58,8 +58,6 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 If you want **transparent backgrounds and better font rendering** make sure you have **GVim** installed.
 
-#### Installing GVim
-
 **Debian / Ubuntu**
 
 ```bash
