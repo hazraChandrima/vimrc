@@ -12,10 +12,13 @@ This config is mainly for Linux users (works on macOS too), cuz anyone using Win
 - Colorschemes: Gruvbox, Mountaineer Grey, Archery (all with dark backgrounds)
 - ALE for asynchronous linting
 - NERDTree for file navigation
-- Custom status line with Git branch display
+- Custom status line with Git branch display / lightline.vim for a clean and lightweight statusline.
 - Convenient key mappings for faster editing
 - fzf for fuzzy file and text search
 - Python script execution with the F5 key
+- vim-matchup for matching parentheses, and tags better than Vim’s default.
+- Works best with gvim.
+
 
 It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 
