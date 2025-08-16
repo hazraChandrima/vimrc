@@ -1,11 +1,11 @@
 # My minimal vimrc
 
-This is a simple and minimal vim configuration that I use often.
+This is a simple and minimal vim configuration that I use.
 Honestly, I don't know why I made this. No one's gonna read this... just like my DMs.
 
 Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with Vim first.
 
-And most importantly, this is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
+This is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
 
 
 ## Low-key features this vimrc offers
@@ -18,9 +18,9 @@ And most importantly, this is for Linux users (works on macOS too), cuz anyone u
 - Python script execution with the F5 key
 
 
-## What does it look like with these colorschemes??
+## What does it look like??
 
-You can use a different color theme from here : [list of vim colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
+You can use a different colorscheme from here : [list of vim colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
 
 ### 1. gruvbox
 
@@ -52,7 +52,6 @@ You can use a different color theme from here : [list of vim colorschemes](https
 
 * Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
-* curl (for downloading vim-plug)
 * fzf (for fuzzy finding)
 
 It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
@@ -60,11 +59,11 @@ It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 ### 1. Clone this repo
 
 ```bash
-git clone --depth=1  https://github.com/hazraChandrima/vimmy.git
+git clone --depth=1  https://github.com/hazraChandrima/vimrc.git
 cd vimmy/
 ```
 
-### 2. Backup your old `.vimrc` (if you have a pre-existing superior vimrc)
+### 2. Backup your old `.vimrc` (if you have a superior vimrc)
 
 ```bash
 mv ~/.vimrc ~/.vimrc.backup
