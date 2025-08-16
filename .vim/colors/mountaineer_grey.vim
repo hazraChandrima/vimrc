@@ -12,7 +12,8 @@ let g:colors_name = 'mountaineer-grey'
 " Configuration: {{{
 let s:configuration = {}
 let s:configuration.palette = get(g:, 'mountaineer-grey_palette', 'soft')
-let s:configuration.transparent_background = get(g:, 'mountaineer-grey_transparent_background', 0)
+" let s:configuration.transparent_background = get(g:, 'mountaineer-grey_transparent_background', 0)
+let s:configuration.transparent_background = 1
 let s:configuration.disable_italic_comment = get(g:, 'mountaineer-grey_disable_italic_comment', 0)
 let s:configuration.enable_italic = get(g:, 'mountaineer-grey_enable_italic', 0)
 let s:configuration.cursor = get(g:, 'mountaineer-grey_cursor', 'auto')
@@ -166,7 +167,7 @@ call s:HL('ModeMsg', s:palette.fg, s:palette.none, 'bold')
 call s:HL('MoreMsg', s:palette.blue, s:palette.none, 'bold')
 call s:HL('IncSearch', s:palette.none, s:palette.none, 'reverse')
 call s:HL('Search', s:palette.none, s:palette.bg3)
-call s:HL('MatchParen', s:palette.none, s:palette.bg4)
+call s:HL('MatchParen', s:palette.bg0, s:palette.yellow)
 call s:HL('NonText', s:palette.grey, s:palette.none)
 call s:HL('Pmenu', s:palette.fg, s:palette.bg2)
 call s:HL('PmenuSbar', s:palette.none, s:palette.bg2)
@@ -1590,7 +1591,7 @@ highlight! link netrwCmdSep Grey
 highlight! link netrwVersion Orange
 " }}}
 " andymass/vim-matchup{{{
-call s:HL('MatchParenCur', s:palette.none, s:palette.none, 'bold')
+call s:HL('MatchParenCur', s:palette.bg0, s:palette.fg, 'bold')
 call s:HL('MatchWord', s:palette.none, s:palette.none, 'underline')
 call s:HL('MatchWordCur', s:palette.none, s:palette.none, 'underline')
 " }}}

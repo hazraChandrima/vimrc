@@ -76,6 +76,8 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'itchyny/lightline.vim'
 
+  Plug 'andymass/vim-matchup'
+
 
 call plug#end()
 
