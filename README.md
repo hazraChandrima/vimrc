@@ -98,7 +98,7 @@ gvim
 
 ```bash
 git clone --depth=1  https://github.com/hazraChandrima/vimrc.git
-cd vimmy/
+cd vimrc/
 ```
 
 ### 2. Backup your old `.vimrc` (if you have a superior vimrc)
