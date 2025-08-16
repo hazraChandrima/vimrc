@@ -1591,7 +1591,7 @@ highlight! link netrwCmdSep Grey
 highlight! link netrwVersion Orange
 " }}}
 " andymass/vim-matchup{{{
-call s:HL('MatchParenCur', s:palette.bg0, s:palette.fg, 'bold')
+call s:HL('MatchParenCur', s:palette.fg, s:palette.bg0, 'bold')
 call s:HL('MatchWord', s:palette.none, s:palette.none, 'underline')
 call s:HL('MatchWordCur', s:palette.none, s:palette.none, 'underline')
 " }}}

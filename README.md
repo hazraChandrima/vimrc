@@ -5,11 +5,11 @@ Honestly, I don't know why I made this. No one's gonna read this... just like my
 
 Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with Vim first.
 
-This is for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
+This config is mainly for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
 
 
 ## Low-key features this vimrc offers
-- Gruvbox/Archery/Mountaineer colorscheme with a dark background
+- Colorschemes: Gruvbox, Mountaineer Grey, Archery (all with dark backgrounds)
 - ALE for asynchronous linting
 - NERDTree for file navigation
 - Custom status line with Git branch display
@@ -17,12 +17,13 @@ This is for Linux users (works on macOS too), cuz anyone using Windows must be h
 - fzf for fuzzy file and text search
 - Python script execution with the F5 key
 
+It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 
 ## What does it look like??
 
 You can use a different colorscheme from here : [list of vim colorschemes](https://github.com/rafi/awesome-vim-colorschemes)
 
-### 1. gruvbox
+### 1. Gruvbox
 
 ![oopsie! it broke :\\](screenshots/gruvbox/nerdtree.png)
 
@@ -30,7 +31,7 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ---
 
-### 3. mountaineer\_grey 
+### 3. Mountaineer\_grey 
 
 ![oopsie! it broke :\\](screenshots/mountaineer/nerdtree.png)
 
@@ -38,7 +39,7 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ---
 
-### 2. archery 
+### 2. Archery 
 
 ![oopsie! it broke :\\](screenshots/archery/nerdtree.png)
 
@@ -53,8 +54,44 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 * Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
 * fzf (for fuzzy finding)
+* GVim
 
-It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
+If you want **transparent backgrounds and better font rendering** make sure you have **GVim** installed.
+
+#### Installing GVim
+
+**Debian / Ubuntu**
+
+```bash
+sudo apt update
+sudo apt install vim-gtk3
+```
+
+**Fedora**
+
+```bash
+sudo dnf install gvim
+```
+
+**Arch Linux**
+
+```bash
+sudo pacman -S gvim
+```
+
+**openSUSE**
+
+```bash
+sudo zypper install gvim
+```
+
+Once installed, you can launch it with:
+
+```bash
+gvim
+```
+
+## Setting it up
 
 ### 1. Clone this repo
 
