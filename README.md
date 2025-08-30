@@ -5,11 +5,9 @@ Honestly, I don't know why I made this. No one's gonna read this... just like my
 
 Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with Vim first.
 
-This config is mainly for Linux users (works on macOS too), cuz anyone using Windows must be happy with their VSCode extensions.
-
 
 ## Low-key features this vimrc offers
-- Colorschemes: Gruvbox, Mountaineer Grey, Tender, Archery (all with dark backgrounds)
+- Colorschemes: Gruvbox, Tender (Tender is my personal fav)
 - ALE for asynchronous linting
 - NERDTree for file navigation
 - Custom status line with Git branch display / lightline.vim for a clean and lightweight statusline.
@@ -34,27 +32,11 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ---
 
-### 2. Mountaineer\_grey 
-
-![oopsie! it broke :\\](screenshots/mountaineer/nerdtree.png)
-
-![what a shame, sorry :\\](screenshots/mountaineer/fzf.png)
-
----
-
-### 3. Tender
+### 2. Tender
 
 ![oopsie! it broke :\\](screenshots/tender/nerdtree.png)
 
 ![what a shame, sorry :\\](screenshots/tender/fzf.png)
-
----
-
-### 4. Archery 
-
-![oopsie! it broke :\\](screenshots/archery/nerdtree.png)
-
-![what a shame, sorry :\\](screenshots/archery/fzf.png)
 
 ---
 
