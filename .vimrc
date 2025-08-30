@@ -33,7 +33,7 @@ if has("termguicolors")
 endif
 
 " --- Color Scheme ---
-colorscheme archery       " I use Arch btw
+colorscheme tender       " I use Arch btw
 set bg=dark               " Set background to dark
 
 
@@ -202,7 +202,7 @@ if has('gui_running')
     set background=dark
 
     " Set the color scheme.
-    colorscheme archery
+    colorscheme tender
 
     " Set a custom font you have installed on your computer.
     " Syntax: set guifont=<font_name>\ <font_weight>\ <size>
@@ -297,7 +297,7 @@ endif
 set laststatus=2
 
 let g:lightline = {
-      \ 'colorscheme': 'archery',
+      \ 'colorscheme': 'tender',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]

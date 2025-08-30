@@ -9,7 +9,7 @@ This config is mainly for Linux users (works on macOS too), cuz anyone using Win
 
 
 ## Low-key features this vimrc offers
-- Colorschemes: Gruvbox, Mountaineer Grey, Archery (all with dark backgrounds)
+- Colorschemes: Gruvbox, Mountaineer Grey, Tender, Archery (all with dark backgrounds)
 - ALE for asynchronous linting
 - NERDTree for file navigation
 - Custom status line with Git branch display / lightline.vim for a clean and lightweight statusline.
@@ -34,7 +34,7 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ---
 
-### 3. Mountaineer\_grey 
+### 2. Mountaineer\_grey 
 
 ![oopsie! it broke :\\](screenshots/mountaineer/nerdtree.png)
 
@@ -42,7 +42,15 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ---
 
-### 2. Archery 
+### 3. Tender
+
+![oopsie! it broke :\\](screenshots/tender/nerdtree.png)
+
+![what a shame, sorry :\\](screenshots/tender/fzf.png)
+
+---
+
+### 4. Archery 
 
 ![oopsie! it broke :\\](screenshots/archery/nerdtree.png)
 
