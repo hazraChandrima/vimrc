@@ -70,6 +70,11 @@ install_nerd_font() {
     rm FiraCode.zip
     fc-cache -fv
     success "Installed FiraCode Nerd Font cuz u don't seem to have one :/"
+    echo
+    warning "It is preferred that you start using a Nerd Font by changing your terminal font"
+    echo -e "  1. Change the font to: ${CYAN}FiraCode Nerd Font Mono${NC}"
+    echo -e "  2. Restart your terminal"
+    echo
 }
 
 
