@@ -4,14 +4,9 @@ set -e
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
-BLUE='\033[0;34m'
 CYAN='\033[0;36m'
 MAGENTA='\033[0;35m'
 NC='\033[0m'
-
-print_status() {
-    echo -e "${BLUE}[INFO]${NC} $1"
-}
 
 print_success() {
     echo -e "${GREEN}[SUCCESS]${NC} $1"
@@ -87,31 +82,16 @@ update_colorscheme() {
 
 
 
-install_dependencies() {
-    print_status "Installing dependencies..."
-    
-    if command -v apt &> /dev/null; then
-        sudo apt update
-        sudo apt install -y git python3 vim-gtk3
-    elif command -v dnf &> /dev/null; then
-        sudo dnf install -y git python3 gvim
-    elif command -v pacman &> /dev/null; then
-        sudo pacman -S --noconfirm git python gvim
-    elif command -v zypper &> /dev/null; then
-        sudo zypper install -y git python3 gvim
-    else
-        print_warning "Could not detect package manager. Stop being lazy and install git, python3, gvim, and fzf manually."
-        return 1
-    fi
-    
-    # fzf is really helpful...
-    if ! command -v fzf &> /dev/null; then
-        print_status "Installing fzf..."
-        git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-        ~/.fzf/install --all
-        print_success "fzf installed successfully"
-    else
-        print_success "fzf is already installed"
+dependencies() {
+    if ! command -v git >/dev/null 2>&1 || ! command -v python >/dev/null 2>&1 || ! command -v vim >/dev/null 2>&1 || ! command -v fzf >/dev/null 2>&1; then
+        print_warning "Ensure you have these installed in your system :"
+        echo "${YELLOW}- git"
+        echo "- python"
+        echo "- vim"
+        echo "- fzf${NC}"
+        echo
+        print_header "If any of these are missing, install them manually and rerun this script."
+        exit 0
     fi
 }
 
@@ -137,17 +117,6 @@ setup_vim_config() {
 }
 
 
-install_vim_plug() {
-    if [ ! -f ~/.vim/autoload/plug.vim ]; then
-        curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-        print_success "vim-plug installed successfully"
-    else
-        print_success "vim-plug is already installed"
-    fi
-}
-
-
 install_plugins() {
     vim +PlugInstall +qall
     print_success "Vim plugins installed successfully"
@@ -167,19 +136,17 @@ main() {
     print_header "╚══════════════════════════════════════╝"
     echo
     
+    dependencies
     select_colorscheme
     echo
     
-    print_status "Starting installation..."
-    install_dependencies
     backup_existing_config
     setup_vim_config
     update_colorscheme ~/.vimrc "$SELECTED_COLORSCHEME" "$LIGHTLINE_COLORSCHEME"
-    install_vim_plug
     install_plugins
 
     print_success "Setup Completed."
     echo
 }
 
-main "@"
+main
