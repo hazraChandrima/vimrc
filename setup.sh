@@ -176,9 +176,10 @@ main() {
     setup_vim_config
     update_colorscheme ~/.vimrc "$SELECTED_COLORSCHEME" "$LIGHTLINE_COLORSCHEME"
     install_vim_plug
-    install_colorscheme_plugins "$SELECTED_COLORSCHEME"
     install_plugins
 
     print_success "Setup Completed."
     echo
 }
+
+main "@"
