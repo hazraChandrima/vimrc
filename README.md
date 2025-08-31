@@ -15,10 +15,9 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 - fzf for fuzzy file and text search
 - Python script execution with the F5 key
 - vim-matchup for matching parentheses, and tags better than Vim’s default.
-- Works best with gvim.
-
 
 It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
+
 
 ## What does it look like??
 
@@ -40,6 +39,7 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ---
 
+
 ## If you ever consider trying it out
 
 ### Just make sure you have
@@ -47,40 +47,8 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 * Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
 * fzf (for fuzzy finding)
-* GVim
+* Vim of course
 
-If you want **transparent backgrounds and better font rendering** make sure you have **GVim** installed.
-
-**Debian / Ubuntu**
-
-```bash
-sudo apt update
-sudo apt install vim-gtk3
-```
-
-**Fedora**
-
-```bash
-sudo dnf install gvim
-```
-
-**Arch Linux**
-
-```bash
-sudo pacman -S gvim
-```
-
-**openSUSE**
-
-```bash
-sudo zypper install gvim
-```
-
-Once installed, you can launch it with:
-
-```bash
-gvim
-```
 
 ## Setting it up
 
@@ -91,28 +59,14 @@ git clone --depth=1  https://github.com/hazraChandrima/vimrc.git
 cd vimrc/
 ```
 
-### 2. Backup your old `.vimrc` (if you have a superior vimrc)
+### 2. Run the setup script
 
 ```bash
-mv ~/.vimrc ~/.vimrc.backup
-```
-
-### 3. Copy the files to your home directory
-
-```bash
-cp .vimrc ~/
-cp -r .vim/ ~/
-```
-
-### 4. Install plugins
-
-Open Vim and run:
-
-```vim
-:PlugInstall
+./setup.sh
 ```
 
 That's all it takes...
+
 
 ## Key Mappings (you may change 'em if you want)
 
