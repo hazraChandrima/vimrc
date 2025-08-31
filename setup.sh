@@ -33,9 +33,7 @@ print_header() {
 
 select_colorscheme() {
     echo
-    print_header "╔══════════════════════════════════════╗"
-    print_header "║       Choose Your Colorscheme        ║"
-    print_header "╚══════════════════════════════════════╝"
+    print_header "Choose Your Colorscheme"
     echo
     echo -e "${MAGENTA}Available colorschemes:${NC}"
     echo "  1) tender   - A clean theme (my personal fav)"
