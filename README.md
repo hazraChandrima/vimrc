@@ -44,10 +44,9 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ### Just make sure you have
 
-* Git (for plugin installation and Git branch detection in the status line)
 * Python3 (for running scripts with F5)
 * fzf (for fuzzy finding)
-* Vim of course
+* Vim (of course)
 
 
 ## Setting it up

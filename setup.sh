@@ -42,17 +42,14 @@ select_colorscheme() {
         case $choice in
             1)
                 SELECTED_COLORSCHEME="tender"
-                LIGHTLINE_COLORSCHEME="tender"
                 break
                 ;;
             2)
                 SELECTED_COLORSCHEME="gruvbox"
-                LIGHTLINE_COLORSCHEME="gruvbox"
                 break
                 ;;
             3)
                 SELECTED_COLORSCHEME="default"
-                LIGHTLINE_COLORSCHEME="default"
                 break
                 ;;
             *)
@@ -64,13 +61,24 @@ select_colorscheme() {
 }
 
 
+install_nerd_font() {
+    header "Installing FiraCode Nerd Font..."
+    mkdir -p ~/.local/share/fonts
+    cd ~/.local/share/fonts
+    curl -fLo "FiraCode.zip" https://github.com/ryanoasis/nerd-fonts/releases/latest/download/FiraCode.zip
+    unzip -o FiraCode.zip
+    rm FiraCode.zip
+    fc-cache -fv
+    success "Installed FiraCode Nerd Font cuz u don't seem to have one :/"
+}
+
+
 check_dependencies() {
-    if ! command -v git >/dev/null 2>&1 || ! command -v python >/dev/null 2>&1 || ! command -v vim >/dev/null 2>&1 || ! command -v fzf >/dev/null 2>&1; then
+    if ! command -v git >/dev/null 2>&1 || ! command -v python3 >/dev/null 2>&1 || ! command -v vim >/dev/null 2>&1 || ! command -v fzf >/dev/null 2>&1; then
         warning "Ensure you have these installed in your system :"
-        echo "${YELLOW}- git"
-        echo "- python"
-        echo "- vim"
-        echo "- fzf${NC}"
+        echo -e "${YELLOW}- python3"
+        echo -e "- vim"
+        echo -e "- fzf${NC}"
         echo
         header "If any of these are missing, install them manually and rerun this script."
         exit 0
@@ -90,6 +98,12 @@ header "╔═══════════════════════
 header "║       Vim Configuration Setup        ║"
 header "╚══════════════════════════════════════╝"
 echo
+
+if fc-list | grep -qi "Nerd Font"; then
+    success "tis good that you have a Nerd Font"
+else
+    install_nerd_font
+fi
 
 check_dependencies
 select_colorscheme
