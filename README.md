@@ -7,12 +7,14 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 
 
 ## Low-key features this vimrc offers
+
 - Colorschemes: Gruvbox, Tender (Tender is my personal fav)
 - **coc.nvim** for **LSP features**:
   - Autocompletion with snippets.  
   - Go-to-definition, find references, symbol renaming.  
   - Hover documentation & signature help.  
   - Diagnostics (errors & warnings) from language servers.  
+
 - NERDTree for file navigation
 - Custom status line with Git branch display / lightline.vim for a clean and lightweight statusline.
 - Convenient key mappings for faster editing
@@ -48,9 +50,10 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ### Just make sure you have
 
-* Python3 (for running scripts with F5)
+* Node.js (>= 16.18.0)
 * fzf (for fuzzy finding)
 * Vim (of course)
+* Python3 (for running scripts with F5, not a must-have)
 * Also, this vimrc works best if you use any Nerd Font (if you don't, this setup will install it for ya :)
 
 
