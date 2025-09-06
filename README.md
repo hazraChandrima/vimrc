@@ -8,7 +8,11 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 
 ## Low-key features this vimrc offers
 - Colorschemes: Gruvbox, Tender (Tender is my personal fav)
-- ALE for asynchronous linting
+- **coc.nvim** for **LSP features**:
+  - Autocompletion with snippets.  
+  - Go-to-definition, find references, symbol renaming.  
+  - Hover documentation & signature help.  
+  - Diagnostics (errors & warnings) from language servers.  
 - NERDTree for file navigation
 - Custom status line with Git branch display / lightline.vim for a clean and lightweight statusline.
 - Convenient key mappings for faster editing
@@ -84,6 +88,7 @@ That's all it takes...
 | `Ctrl+j/k/h/l`    | Navigate between split windows                            |
 | `Ctrl+Arrow Keys` | Resize split windows                                      |
 | `Ctrl+p`          | Open fzf and fuzzy search files in the current directory  |
+| `<C-f> / <C-b>`   | Scroll inside coc.nvim floating docs/popups               |
 
 
 ## If something goes wrong
