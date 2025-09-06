@@ -1,6 +1,6 @@
 # My minimal vimrc
 
-![what a shame you couldn't see!](preview/preview.mp4)
+![what a shame you couldn't see!](preview/preview.gif)
 
 This is a simple and minimal vim configuration that I use.
 Honestly, I don't know why I made this. No one's gonna read this... but if you reached here, thank you for your time.
