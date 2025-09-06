@@ -22,8 +22,10 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 - Python script execution with the F5 key
 - vim-matchup for matching parentheses, and tags better than Vim’s default.
 
-It uses [vim-plug](https://github.com/junegunn/vim-plug) for plugin management.
 
+It uses [vim-plug](https://github.com/junegunn/vim-plug) for managing plugins.
+
+---
 
 ## What does it look like??
 
