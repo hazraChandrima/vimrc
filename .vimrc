@@ -358,7 +358,7 @@ if has('gui_running')
 
     " Set a custom font you have installed on your computer.
     " Syntax: set guifont=<font_name>\ <font_weight>\ <size>
-    set guifont=Monospace\ Regular\ 12
+    set guifont=Inconsolata\ Nerd\ Font\ Mono:h12
 
     " Display more of the file by default.
     " Hide the toolbar.
@@ -394,7 +394,7 @@ endif
 
 " I have provided personalized statusline as well as the lightline version.
 " You can use either of them by commenting out the other one.
-" I personally use the lightline one for arch color theme...
+" I personally use the lightline one because it provides matching color schemes and is much cleaner
 
 
 " ---------------- PERSONALIZED STATUS LINE ----------------------
