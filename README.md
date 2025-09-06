@@ -1,5 +1,7 @@
 # My minimal vimrc
 
+![what a shame you couldn't see!](preview/preview.mp4)
+
 This is a simple and minimal vim configuration that I use.
 Honestly, I don't know why I made this. No one's gonna read this... but if you reached here, thank you for your time.
 
@@ -33,17 +35,17 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 
 ### 1. Gruvbox
 
-![oopsie! it broke :\\](screenshots/gruvbox/nerdtree.png)
+![oopsie! it broke :\\](preview/gruvbox/nerdtree.png)
 
-![what a shame, sorry :\\](screenshots/gruvbox/fzf.png)
+![what a shame, sorry :\\](preview/gruvbox/fzf.png)
 
 ---
 
 ### 2. Tender
 
-![oopsie! it broke :\\](screenshots/tender/nerdtree.png)
+![oopsie! it broke :\\](preview/tender/nerdtree.png)
 
-![what a shame, sorry :\\](screenshots/tender/fzf.png)
+![what a shame, sorry :\\](preview/tender/fzf.png)
 
 ---
 

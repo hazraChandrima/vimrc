@@ -101,6 +101,25 @@ let g:fzf_layout = { 'window': { 'width': 0.75, 'height': 0.7, 'yoffset': 0.5, '
 
 let g:fzf_preview_window = ['right:60%', 'ctrl-/']
 
+
+" ---------- Coc Floating Window Colors ----------
+" Floating window background + text
+highlight CocFloating guibg=#282828 guifg=#eeeeee
+
+" Border of the floating window
+highlight CocFloatingBorder guibg=#282828 guifg=#444444
+
+" Completion popup menu
+highlight Pmenu guibg=#383838 guifg=#eeeeee
+highlight PmenuSel guibg=#585858 guifg=#ffffff
+
+" Diagnostics inside floating windows
+highlight CocErrorFloat guibg=#282828 guifg=#ff6c6b
+highlight CocWarningFloat guibg=#282828 guifg=#ECBE7B
+highlight CocInfoFloat guibg=#282828 guifg=#51afef
+highlight CocHintFloat guibg=#282828 guifg=#98be65
+
+
 " }}}
 
 
