@@ -75,7 +75,6 @@ call TransparentBackground()
 call plug#begin('~/.vim/plugged')
 
 
-  " Plug 'dense-analysis/ale'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
   Plug 'preservim/nerdtree'
