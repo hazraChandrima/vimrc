@@ -12,9 +12,9 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 
 - Colorschemes: Gruvbox, Tender (Tender is my personal fav)
 - **LSP features**:
+  - Provides LSP support for C/C++, Java, Python, JS/TS, shell and some other languages as well...
   - Autocompletion with snippets.  
-  - Go-to-definition, find references, symbol renaming.  
-  - Hover documentation 
+  - Go-to-definition, find references, hover docs  
   - Diagnostics (errors & warnings) from language servers.  
 
 - NERDTree for file navigation
