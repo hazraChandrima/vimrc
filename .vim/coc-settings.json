@@ -1,0 +1,45 @@
+{
+    "suggest.noselect": false,
+    "diagnostic.enable": true,
+    "diagnostic.virtualText": true,
+    "languageserver": {
+        "clangd": {
+            "command": "clangd",
+            "rootPatterns": [
+                "compile_flags.txt",
+                "compile_commands.json",
+                ".git/"
+            ],
+            "filetypes": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp"
+            ]
+        },
+        "java": {
+            "command": "jdtls",
+            "filetypes": [
+                "java"
+            ]
+        },
+        "sh": {
+            "command": "bash-language-server",
+            "args": [
+                "start"
+            ],
+            "filetypes": [
+                "sh"
+            ]
+        },
+        "yaml": {
+            "command": "yaml-language-server",
+            "args": [
+                "--stdio"
+            ],
+            "filetypes": [
+                "yaml"
+            ]
+        }
+    }
+}

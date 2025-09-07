@@ -139,6 +139,8 @@ sed -i "s/'colorscheme': '[^']*'/'colorscheme': '$SELECTED_COLORSCHEME'/" ~/.vim
 success "Colorscheme updated successfully in ~/.vimrc"
 
 vim +PlugInstall +qall
-vim +'CocInstall -sync coc-json coc-tsserver' +qall >/dev/null 2>&1 || true
-success "Vim plugins installed successfully"
-success "Setup Completed."
+
+# you can add more language servers if you want...
+vim +'CocInstall coc-clangd coc-java coc-pyright coc-html coc-css coc-tsserver coc-json coc-sh coc-yaml coc-markdownlint' +qall >/dev/null 2>&1 || true
+success "Vim plugins and language servers installed successfully"
+success "Setup Completed!"
