@@ -31,6 +31,10 @@ set showcmd               " Show incomplete commands in the bottom bar
 set noshowmode              " Display the current mode
 set showmatch             " Highlight matching parentheses/brackets
 
+" undo tree is very powerful
+set undofile
+set undodir=~/.vim/undo
+
 set history=1000          " history is important 
 set wildmenu              " Enhanced command-line completion
 set wildmode=list:longest " Auto-complete with longest match first
@@ -87,6 +91,10 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'andymass/vim-matchup'
 
+  Plug 'rstacruz/vim-closer'
+
+  Plug 'simnalamburt/vim-mundo'
+
 
 call plug#end()
 
@@ -95,8 +103,8 @@ call plug#end()
 
 " PLUGIN CONFIGURATIONS  ------------------------------------------------- {{{
 
-" fzf configuration
 
+" ------------ fzf configuration -----------
 let g:fzf_layout = { 'window': { 'width': 0.75, 'height': 0.7, 'yoffset': 0.5, 'xoffset': 0.5, 'border': 'sharp' } }
 
 let g:fzf_preview_window = ['right:60%', 'ctrl-/']
@@ -118,6 +126,15 @@ highlight CocErrorFloat guibg=#282828 guifg=#ff6c6b
 highlight CocWarningFloat guibg=#282828 guifg=#ECBE7B
 highlight CocInfoFloat guibg=#282828 guifg=#51afef
 highlight CocHintFloat guibg=#282828 guifg=#98be65
+
+
+" ----------- Mundo Configuration -----------
+let g:mundo_auto_open = 1          " open the tree automatically
+let g:mundo_auto_preview = 1       " show preview automatically
+let g:mundo_width = 60             " tree width
+let g:mundo_preview_height = 40    " preview height
+let g:mundo_right = 1              " tree on the right
+let g:mundo_preview_bottom = 1     " preview below the tree
 
 
 " }}}
@@ -331,6 +348,11 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+
+" --------------- HERE COMES THE POWERFUL UNDO TREE -----------------
+
+nnoremap <F2> :MundoToggle<CR>
 
 
 " }}}

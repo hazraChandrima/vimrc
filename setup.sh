@@ -129,6 +129,9 @@ if [ -d .vim ]; then
     cp -r .vim/ ~/
 fi
 
+# god bless the undo tree
+mkdir -p ~/.vim/undo
+
 sed -i "s/^colorscheme .*/colorscheme $SELECTED_COLORSCHEME      \" Selected during installation/" ~/.vimrc
 sed -i "/if has('gui_running')/,/endif/ s/colorscheme .*/    colorscheme $SELECTED_COLORSCHEME/" ~/.vimrc
 sed -i "s/'colorscheme': '[^']*'/'colorscheme': '$SELECTED_COLORSCHEME'/" ~/.vimrc

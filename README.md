@@ -11,18 +11,18 @@ Anyways, I'll be switching to NeoVim very soon, so I just wanted to start with V
 ## Low-key features this vimrc offers
 
 - Colorschemes: Gruvbox, Tender (Tender is my personal fav)
-- **coc.nvim** for **LSP features**:
+- **LSP features**:
   - Autocompletion with snippets.  
   - Go-to-definition, find references, symbol renaming.  
-  - Hover documentation & signature help.  
+  - Hover documentation 
   - Diagnostics (errors & warnings) from language servers.  
 
 - NERDTree for file navigation
 - Custom status line with Git branch display / lightline.vim for a clean and lightweight statusline.
 - Convenient key mappings for faster editing
 - fzf for fuzzy file and text search
-- Python script execution with the F5 key
-- vim-matchup for matching parentheses, and tags better than Vim’s default.
+- vim-matchup for matching parentheses + vim-closer for auto-closing brackets.
+- The most powerful of all : **UNDO TREES** (which your VSCode can't, huh ;)
 
 
 It uses [vim-plug](https://github.com/junegunn/vim-plug) for managing plugins.
@@ -90,8 +90,9 @@ That's all it takes...
 | `o` / `O`         | Open a new line below/above and return to normal mode     |
 | `n` / `N`         | Move to next/previous search result and center the cursor |
 | `Y`               | Yank from cursor to the end of the line                   |
-| `<F5>`            | Save and run current Python file                          |
+| `<F2>`            | Toggle Mundo (undo tree)                                  |
 | `<F3>`            | Toggle NERDTree                                           |
+| `<F5>`            | Save and run current Python file                          |
 | `Ctrl+j/k/h/l`    | Navigate between split windows                            |
 | `Ctrl+Arrow Keys` | Resize split windows                                      |
 | `Ctrl+p`          | Open fzf and fuzzy search files in the current directory  |
