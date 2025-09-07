@@ -31,9 +31,9 @@ set showcmd               " Show incomplete commands in the bottom bar
 set noshowmode              " Display the current mode
 set showmatch             " Highlight matching parentheses/brackets
 
-" undo tree is very powerful
 set undofile
 set undodir=~/.vim/undo
+set undoreload=10000
 
 set history=1000          " history is important 
 set wildmenu              " Enhanced command-line completion
@@ -129,12 +129,13 @@ highlight CocHintFloat guibg=#282828 guifg=#98be65
 
 
 " ----------- Mundo Configuration -----------
-let g:mundo_auto_open = 1          " open the tree automatically
-let g:mundo_auto_preview = 1       " show preview automatically
-let g:mundo_width = 60             " tree width
-let g:mundo_preview_height = 40    " preview height
-let g:mundo_right = 1              " tree on the right
-let g:mundo_preview_bottom = 1     " preview below the tree
+let g:mundo_auto_open = 0
+let g:mundo_auto_preview = 0
+let g:mundo_width = 60
+let g:mundo_preview_height = 40
+let g:mundo_right = 1
+let g:mundo_preview_bottom = 1
+let g:mundo_disable_textprops = 1
 
 
 " }}}
@@ -372,13 +373,6 @@ augroup END
 " If the current file type is HTML, set indentation to 2 spaces.
 autocmd Filetype html setlocal tabstop=2 shiftwidth=2 expandtab
 
-" If Vim version is equal to or greater than 7.3 enable undofile.
-" This allows you to undo changes to a file even after saving it.
-if version >= 703
-    set undodir=~/.vim/backup
-    set undofile
-    set undoreload=10000
-endif
 
 " You can split a window into sections by typing `:split` or `:vsplit`.
 " Display cursorline and cursorcolumn ONLY in active window.
@@ -387,6 +381,18 @@ augroup cursor_off
     autocmd WinLeave * set nocursorline nocursorcolumn
     autocmd WinEnter * set cursorline nocursorcolumn
 augroup END
+
+" Disable Coc inside Mundo buffers (avoids crashes)
+augroup CocDisableOnMundo
+  autocmd!
+  autocmd FileType mundo let b:coc_enabled = 0 | let b:coc_diagnostic_disable = 1 | let b:coc_suggest_disable = 1
+augroup END
+
+" makes the undo directory if not present
+if !isdirectory(expand(&undodir))
+  call mkdir(expand(&undodir), 'p', 0700)
+endif
+
 
 " If GUI version of Vim is running set these options.
 if has('gui_running')
