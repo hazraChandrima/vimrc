@@ -57,7 +57,7 @@ You can use a different colorscheme from here : [list of vim colorschemes](https
 * Node.js (>= 16.18.0)
 * fzf (for fuzzy finding)
 * Vim (of course)
-* Python3 (for running scripts with F5, not a must-have)
+* Python3 (for undo-tree)
 * Also, this vimrc works best if you use any Nerd Font (if you don't, this setup will install it for ya :)
 
 

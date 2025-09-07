@@ -79,10 +79,11 @@ install_nerd_font() {
 
 
 check_dependencies() {
-    if ! command -v git >/dev/null 2>&1 || ! command -v node >/dev/null 2>&1 || ! command -v vim >/dev/null 2>&1 || ! command -v fzf >/dev/null 2>&1; then
+    if ! command -v git >/dev/null 2>&1 || !command -v python3 >/dev/null 2>&1 || ! command -v node >/dev/null 2>&1 || ! command -v vim >/dev/null 2>&1 || ! command -v fzf >/dev/null 2>&1; then
         warning "Ensure you have all of these installed in your system :"
         echo -e "${YELLOW}- node.js"
         echo -e "- vim"
+        echo -e "- python3"
         echo -e "- fzf${NC}"
         echo
         header "If any of these are missing, install them manually and rerun this script."
