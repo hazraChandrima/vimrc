@@ -91,8 +91,6 @@ call plug#begin('~/.vim/plugged')
 
   Plug 'andymass/vim-matchup'
 
-  Plug 'rstacruz/vim-closer'
-
   Plug 'simnalamburt/vim-mundo'
 
 
